@@ -1,0 +1,102 @@
+main {
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+.curso-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #202020;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #f5a000;
+}
+
+div {
+    padding: 12px 24px;
+}
+
+.cursos {
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+.curso-item li {
+    background-color: #4d4d4d;
+    border-radius: 5px;
+    padding: 12px 16px;
+}
+
+.curso-item ul {
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.curso-item span {
+    height: 5px;
+    width: 32px;
+    background-color: #f5a000;
+    display: block;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+.curso-item a {
+    background-color: #161646;
+    width: 250px;
+    height: 22px;
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+    right: -55px;
+    transform: rotate(-30deg);
+
+}
+
+.cursos img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.curso-item:hover span {
+    width: 150px;
+
+}
+
+@media screen and (max-width: 700px) {
+    .curso-item {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    main {
+        gap: 0px;
+    }
+
+}
+curso-item a {
+    background-color: #f5a000;
+    width: 250px;
+    height: 22px;
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+    right: -55px;
+    transform: rotate(-30deg);
+}
+
